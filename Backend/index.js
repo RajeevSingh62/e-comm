@@ -13,7 +13,9 @@ const app = express();
 connectDB()
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin:"https:e-comm-front-kijd.onrender.com"
+}));
 
 app.post("/register", async (req, resp) => {
   let user = new User(req.body);
