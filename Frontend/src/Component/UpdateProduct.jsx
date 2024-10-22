@@ -16,7 +16,7 @@ const UpdateProduct = () => {
 
   const getProductDetails = async () => {
     console.log(params);
-    let result = await fetch(`https://e-com-backend-128g.onrender.com/product/${params.id}`,{
+    let result = await fetch(`https://e-comm-b.onrender.com/product/${params.id}`,{
       headers:{
         authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
       }

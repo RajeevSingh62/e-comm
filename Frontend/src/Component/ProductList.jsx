@@ -9,7 +9,7 @@ const ProductList = () => {
   }, [])
 
   const getProducts = async () => {
-    let result = await fetch('https://e-com-backend-128g.onrender.com/products',{
+    let result = await fetch('https://e-comm-b.onrender.com/products',{
       headers:{
         authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
       }

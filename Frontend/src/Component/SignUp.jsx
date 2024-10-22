@@ -17,7 +17,7 @@ const SignUp = () => {
 
   const collectData=async ()=>{
   console.log(name,email,password);
-  let result =await fetch('https://e-com-backend-128g.onrender.com/register',{
+  let result =await fetch('https://e-comm-b.onrender.com/register',{
   method:'post',
   body: JSON.stringify({name,email,password}),
   headers:{  

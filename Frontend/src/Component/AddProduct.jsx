@@ -17,7 +17,7 @@ const AddProduct = () => {
     }
 
     const userId = JSON.parse(localStorage.getItem('user'))._id;
-    let result = await fetch("https://e-com-backend-128g.onrender.com/add-product", {
+    let result = await fetch("https://e-comm-b.onrender.com/add-product", {
       method: 'post',
       body: JSON.stringify({ name, price, category, company, userId }),
       headers: {
