@@ -111,7 +111,9 @@ function verifyToken(req, resp, next) {
   }
 }
 
-app.listen(8088, () => {
+let PORT = 9000
+
+app.listen(process.env.PORT, () => {
   console.log("server running");
 })
 
